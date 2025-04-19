@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: AuthenticationServer
+
+  data:
+    mongodb:
+      port: 27017
+      host: localhost
+      database: ADServer
+
+#it is used to through the exception occur in AuthenticationCheck
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+
+server:
+  port: 8082
+
+
+jwt:
+  secret: xZXKLkTc7vfFxC+b5U7g2KlCZdCJmy2iibl6DOJzBeg=

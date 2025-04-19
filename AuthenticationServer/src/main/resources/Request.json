@@ -1,0 +1,11 @@
+
+
+{
+  "userName":"shivam",
+  "passWord":"shivam",
+  "userEmail":"shivam@gmail.com",
+  "userRoles":[
+    "ADMIN"
+  ],
+  "apiDescription": "Add User - Admin"
+}

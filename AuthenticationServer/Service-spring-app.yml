@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jwt-auth-service
+  labels:
+    app: jwt-auth-app
+spec:
+  type: NodePort   # Use NodePort so you can access from localhost/minikube
+  selector:
+    app: jwt-auth-app   # must match the pod labels in your Deployment
+  ports:
+    - port: 8082        # Service port
+      targetPort: 8082  # Container port (Spring Boot inside pod)
+      nodePort: 31500   # Optional: fixed NodePort (between 30000-32767)
